@@ -1,0 +1,46 @@
+.categories-listing-main-header {
+  
+  text-align: center;
+  font-size: large;
+  align-items: center;
+}
+
+.categories-listing-main-toolbar {
+  // Override Ionic properties
+  @at-root ion-toolbar#{&} {
+    --background: transparent;
+   // --color: var(--ion-color-dark);
+  }
+}
+
+ion-content {
+  position: absolute;
+  top: 0;
+  border-top: var(--app-header-height);
+  border-top-style: solid;
+  // Same as default ion-content background
+  border-top-color: #0070BA;
+}
+
+.categories-call-out {
+  margin: 15px 20px 30px;
+  color: #0070BA;
+  text-align: center;
+  line-height: 1.4;
+  
+
+  ion-badge {
+    vertical-align: sub;
+    text-transform: uppercase;
+    margin: 0px 6px;
+  }
+}
+
+.category-card {
+  --color: #0070BA;
+
+  ion-card-title,
+  ion-card-subtitle {
+    --color: #FFF;
+  }
+}
